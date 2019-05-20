@@ -8,6 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Meccsek")
 public class Meccsek {
+    Meccsek(){};
     @Id
     @Column(name = "match_id")
     private int match_id;
