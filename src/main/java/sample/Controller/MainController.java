@@ -28,13 +28,21 @@ public   class MainController extends Controller implements EredmenyStreams {
 
     }
     public  void feltoltCsapatokAdatbazis(){
-        for (int i=0; i<Controller.csapat.size();i++){
-            csapatDao.persist(Controller.csapat.get(i));
+         int x=csapatDao.findAll().size();
+        if(x!= Controller.csapat.size()) {
+            for (int i = x; i < Controller.csapat.size(); i++) {
+
+                csapatDao.persist(Controller.csapat.get(i));
+
+            }
         }
     }
     public  void feltoltMeccsekAdatbazis(){
-        for (int i=0; i<Controller.meccsek.size();i++){
-            meccsekDao.persist(Controller.meccsek.get(i));
+        int x=meccsekDao.findAll().size();
+        if(x!= Controller.meccsek.size()) {
+            for (int i = x; i < Controller.meccsek.size(); i++) {
+                meccsekDao.persist(Controller.meccsek.get(i));
+            }
         }
     }
 
