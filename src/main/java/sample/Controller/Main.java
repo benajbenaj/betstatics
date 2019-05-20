@@ -16,11 +16,7 @@ import sample.Model.EnityClasses.MeccsekDao;
 import java.io.IOException;
 import java.util.List;
 
-/**
- BUG VESZÉLY kimaradt időhiany miatt, annak tesztelese h leteznek e mar a rekordok akkor ne toltse fel
- Minden futtataskor törölni kell az adatbazist :(
- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- **/
+
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
