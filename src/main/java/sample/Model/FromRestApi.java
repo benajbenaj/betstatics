@@ -15,7 +15,7 @@ public abstract class FromRestApi{
     /**
      Az adatbázis inicializálásához szükséges deklarációk
      **/
-    private final static String key = "66fc619035ebc9c1342b883c44cdbef6a153e54267719d244e138df56601c53f";
+    private final static String key = "f4a1fa06be1e140f2daacee2f7d0452490b939b7cd059698a95f1f614b494536";
     private final static String url="https://apifootball.com/api/?action=get_standings&league_id=62&APIkey=";
     private final static String localurl="ez.json";
 
